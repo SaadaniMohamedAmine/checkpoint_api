@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h4>Hello from the App component !!</h4>
         <USerList />
       </header>
     </div>

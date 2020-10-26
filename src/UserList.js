@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import axios from 'axios'
+import './App.css'
 
 const UserList = () => {
     const[listOfUSer,setListOfUSer]=useState([]) ;
@@ -14,13 +15,15 @@ const UserList = () => {
     },[])
     
     return (
-        <div>
-             <h4>List of users</h4>
+        <div className='list'>
+             <h4 className='list-title'>List of users</h4>
+             <ul className='list-ord'>
              {listOfUSer.map((user)=>(
-                 <div>
+                 <li className='item'>
                      {user.name}
-                 </div>
+                 </li>
              ))}
+             </ul>
         </div>
     )
 }
